@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/itens.css">
+  <link rel="stylesheet" href="CSS/menu.css">
+  <link rel="stylesheet" href="CSS/responsividade.css">
+  <script src="JS/barra_de_pesquisa.js"></script>
+  <script src="JS/menu.js"></script>
+  <script src="JS/responsividade.js"></script>
+  <title>Thunderstrike Music Store</title>
+</head>
+
+<body id="body">
+  <!-- CABEÇALHO -->
+  <header><a class="titulo" href="index.html">Thunderstrike Music Store Brazil</a>
+    <div class="abrir"><a id="abrir" onclick="abrir()">&#9776;</a></div>
+</header>
+
+  <!-- BARRA DE PESQUISA -->
+  <input id="pesquisa" type="text" placeholder="Pesquisa" onkeypress="pesquisar(event)">
+  <!-- PODERIA SE USAR "onblur()" E O "onfocus()" EM JS-->
+
+
+  <div class="anuncio">
+    <p>O MELHOR PREÇO DE INSTRUMENTOS NO BRASIL</p>
+  </div>
+
+  <!-- CONTEUDO -->
+  <main id="resposta">
+  <a href="paginas-de-compras/guitarra-fender.html" class="item_1_1">
+    <div class="item_1"><img src="imagens/fender_1.jpg">
+      <p class="guitarra_1">Made in Japan Limited Hybrid II Fender - Telecaster®, Noir</p>
+      <p class="preco">R$7.132,87</p>
+    </div>
+  </a>
+  <a href="#" class="item_2">
+    <div class="item_1"><img src="imagens/jackson_1.png">
+      <p class="guitarra_1">JACKSON - X SERIES DINKY® DK1A</p>
+      <p class="preco">R$7.516,82</p>
+    </div>
+  </a>
+  <a href="#" class="item_3">
+    <div class="item_1"><img src="imagens/ibanez_1.jpg">
+      <p class="guitarra_1">IBANEZ - RG GIO GRX70QA</p>
+      <p class="preco">R$2.044,00</p>
+    </div>
+  </a>
+  <a href="#" class="item_4" id="item_4">
+    <div class="item_1" ><img src="imagens/baixo_fender.jpg">
+      <p id="baixo" class="guitarra_1" >American Professional II Jazz Bass</p>
+      <p class="preco" >R$19.073,44</p>
+    </div>
+  </a>
+  <a href="#" class="item_5">
+    <div class="item_1"><img src="imagens/gibson.png" class="gibson">
+      <p class="guitarra_1">1959 Les Paul Standard Factory Burst Ultra Light Aged, Factory Burst</p>
+      <p class="preco">R$38.584,03</p>
+    </div>
+  </a>
+  <a href="#" class="item_6">
+    <div class="item_final"><img src="imagens/violao_fender.jpg" class="fender">
+      <p class="guitarra_1">Redondo Special</p>
+      <p class="preco">R$6.291,00</p>
+    </div>
+  </a>
+  </main>
+
+  <!-- BARRA LATERAL -->
+  <div id="menu">
+    <!-- CONTEUDO DA BARRA LETERAL -->
+    <a class="inicio" href="index.html">INÍCIO</a>
+    <a class="instrumentos" href="#" onclick="abrir_sub()">INSTRUMENTOS</a>
+    <div id="menu_sec">
+      <a href="#" class="guitarras" onclick="pesquisaporclick_guitarras()">GUITARRAS</a>
+      <a href="#" class="baixos" onclick="pesquisaporclick_baixos()">BAIXOS</a> 
+      <a href="#" class="violoes" onclick="pesquisaporclick_viloes()">VIOLÕES</a> 
+    </div>         
+  </div>
+  <a class="fechar" onclick="fechar()" onfocus="fechar()">X</a>
+  <a href="#" class="sobre_nos">SOBRE NÓS</a>
+
+</body>
+<script src="JS/nome.js"></script>
+<script src="JS/itens_individuais.js"></script>
+
+</html>
